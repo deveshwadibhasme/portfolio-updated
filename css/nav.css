@@ -45,7 +45,10 @@
   content: "@deveshwadibhasme";
 }
 .social-nav:has(.fa-envelope:hover) .fa-envelope::after {
-  content: "@deveshwadibhasme.12";
+  content: "deveshwadibhasme.12@";
+}
+.social-nav:has(.fa-github:hover) .fa-github::after {
+  content: "deveshwadibhasme";
 }
 
 /* Responsive */
@@ -53,6 +56,8 @@
   .social-nav {
     font-size: 20px;
     right: 20px;
+    justify-content: center;
+    gap: 40px;
   }
   .social-nav i::after {
     top: 2px;
