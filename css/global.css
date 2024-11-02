@@ -7,6 +7,7 @@
 :root{
     --white-flash:#fff;
     --bg-letter:#04FDFD;
+    --dark:black;
 }
 
 /* Resetting Properties and applying font*/

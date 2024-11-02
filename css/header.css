@@ -13,7 +13,9 @@
 
 @media (max-width:400px) {
   .hero-page .header .logo {
-    max-width: 100px;
+    max-width: 140px;
+    width: 100%;
     height: 100%;
+    margin-left: -10px;
   }
 }
