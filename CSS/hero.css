@@ -1,0 +1,137 @@
+/* Hero TextContent and background */
+.hero-page {
+  margin: 0 auto;
+  width: 100%;
+  min-height: 80vh;
+  z-index: 2;
+  position: relative;
+  overflow: hidden;
+}
+.hero-page .hero-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  z-index: 3;
+}
+.hero-page .hero-content .hero-text {
+  color: var(--white-flash);
+  max-width: 800px;
+  margin-left: 40px;
+  margin-top: 50px;
+  z-index: 4;
+}
+.hero-page .hero-text h1 {
+  font-size: 50px;
+  font-weight: 900;
+  text-shadow: 0 0 5px black;
+  margin-bottom: 10px;
+  user-select: none;
+}
+.hero-page .hero-text .who-i-am {
+  font-size: 20px;
+  font-family: monospace;
+  user-select: none;
+}
+.hero-page .hero-text .about-me {
+  background-color: var(--bg-letter);
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  color: var(--dark);
+}
+.hero-page .hero-text .about-me::after {
+  content: "→";
+  font-size: 40px;
+  position: absolute;
+  top: -12px;
+  transform: translateX(1px);
+  color: var(--white-flash);
+  animation: right 1s infinite alternate-reverse;
+}
+.hero-page .go-down{
+  position: absolute;
+  left: 48%;
+  bottom: 40px;
+  color: black;
+  padding: 2px;
+  border-radius: 10px;  
+  cursor: pointer;
+  background-color: var(--bg-letter);
+}
+.hero-page .go-down::after{
+  content: '↓';
+  font-size: 30px;
+  position: absolute;
+  bottom: -30px;
+  animation: down 1s infinite alternate-reverse;
+  left: 40%;
+  color: var(--white-flash);
+}
+
+/* background-styling */
+.hero-page .hero-bg {
+  position: absolute;
+  top: 34%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 700px; 
+  z-index: -1;
+}
+
+.to-appear{
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+/* Animations */
+
+@keyframes down {
+  from{
+    transform: translateY(0);
+  }
+  to{
+    transform: translateY(10px);
+  }
+}
+@keyframes right {
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(10px);
+  }
+}
+
+/* Responsive */
+@media (max-width: 780px) {
+  .hero-page {
+    overflow-x: hidden;
+  }
+  .hero-text {
+    position: relative;
+    top: 20px;
+  }
+  .hero-page .hero-text h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .hero-page .hero-text .who-i-am {
+    font-size: 15px;
+    text-shadow: 0 0 5px black;
+  }
+  .hero-page .hero-text .about-me {
+    padding: 6px;
+    font-size: 13px;
+  }
+  .hero-page .hero-text .about-me::after {
+    font-size: 30px;
+    top: -7px;
+    transform: translateX(3px);
+  }
+  .hero-page .hero-bg {
+    position: absolute;
+    width: 220px;
+  }
+}

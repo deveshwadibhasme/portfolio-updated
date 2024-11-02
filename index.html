@@ -4,22 +4,33 @@
 <head>
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>Lets try it</title>
+    <title>Cow Boy</title>
     <link rel='stylesheet' href='/css/global.css'>
     <script src='https://kit.fontawesome.com/0f0486bb75.js' crossorigin='anonymous'></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
-    <script src='script.js' defer></script>
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+        rel="stylesheet" />
+    <script src='./js/script.js' defer></script>
 </head>
 
 <body>
     <!-- All-Content-Wrapper -->
     <main class="main">
+
+        <!--Header-->
+        <div class="header" >
+            <div class="logo"><img src="/images/D.png" alt="logo">
+                <div class="click-me">Click For Lights</div>
+            </div>
+        </div>
+
         <!-- Hero -->
         <div class="hero-page">
-            <!--Header-->
-            <div class="header">
-                <div class="logo"><img src="/images/D.png" alt="logo"><div class="click-me">Click For Lights</div></div>
+            <!-- BG -->
+            <div class="hero-bg to-appear">
+                <img src="/images/D.svg" alt="bg-letter" data-tilt data-tilt-max="50" data-tilt-speed="500"
+                    data-tilt-perspective="600">
             </div>
             <!-- Social handle -->
             <div class="social-nav">
@@ -39,39 +50,37 @@
                     <i class="fas fas fab fa-github to-appear"></i>
                 </a>
             </div>
-            <!-- Hero Text Material & BG -->
+            <!-- Hero Text Material -->
             <div class="hero-content">
                 <div class="hero-text">
                     <h1 class="to-appear">Devesh Wadibhasme</h1>
                     <h4 class="who-i-am to-appear">Frontend Developer</h4>
                     <button class="about-me to-appear" data-tilt data-tilt-glare>About Me</button>
                 </div>
-                <div class="hero-bg to-appear">
-                    <img src="/images/D.svg" alt="bg-letter" data-tilt data-tilt-max="10" data-tilt-speed="300" data-tilt-perspective="600">
-                </div>
             </div>
             <div class="go-down to-appear"><a href="#skills">Skills</a></div>
         </div>
         <!-- Hero Off-->
+
         <!-- My Skills -->
-         <div class="skill-page" id="skills">
+        <div class="skill-page" id="skills">
             <marquee behavior="smooth" direction="left">Not yet completed</marquee>
-             <h1>Which Skills I am learning?</h1>
-             <div class="main-content">
-                 <div class="skills-container">Konichiwa</div>
-                 <div class="lamp-cnt">
+            <h1>Which Skills I am learning?</h1>
+            <div class="main-content">
+                <div class="skills-container">Konichiwa</div>
+                <div class="lamp-cnt">
                     <img src="/images/light bulb.png" alt="">
                     <div class="lamp" id="lamp"></div>
                     <div class="slider-container">
                         <input type="range" id="brightness" min="0" max="100" value="50">
                     </div>
-                 </div>
-             </div>
-         </div>
+                </div>
+            </div>
+        </div>
         <!-- Skills Off -->
     </main>
     <!-- Content-Wrapped -->
-<script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript" src="./js/vanilla-tilt.js"></script>
 </body>
 
 </html>
