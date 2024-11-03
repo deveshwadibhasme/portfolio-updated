@@ -1,8 +1,10 @@
 const logoClick = document.querySelector('.logo')
 const clickOff = document.querySelector('.click-me')
-const textElements = document.querySelectorAll('.to-appear');
+const main = document.querySelector('.main')
+const textElements = document.querySelectorAll('.to-appear')
 logoClick.addEventListener('click',()=>{
     clickOff.style.display = 'none'
+    main.style.overflowX = 'visible';
     textElements.forEach((el, index) => {
         setTimeout(() => {
             el.style.opacity = 1;
