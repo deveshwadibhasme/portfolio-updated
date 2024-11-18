@@ -58,6 +58,7 @@
     right: 20px;
     justify-content: center;
     gap: 40px;
+    z-index: 8;
   }
   .social-nav i::after {
     top: 2px;
